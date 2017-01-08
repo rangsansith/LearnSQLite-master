@@ -10,12 +10,16 @@ public class MainActivity extends AppCompatActivity {
 
     //Explicit
     private Button singInButton, singUpButton;
+    private MyManage myManage;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        myManage = new MyManage(MainActivity.this);
+        
 
         bingWidget();
         buttonController();

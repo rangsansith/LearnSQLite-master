@@ -47,8 +47,9 @@ public class SignUp extends AppCompatActivity {
 
                 } else {
                     // No Space
-
-
+                    MyManage myManage = new MyManage(SignUp.this);
+                    myManage.addNewValue(nameString, userString, passwordString);
+                    finish();
 
 
                 }   // if
